@@ -103,7 +103,7 @@ export default class Countdown extends React.Component {
           />
         </Content>
         <Footer>
-          <div lassName="countdown__input">
+          <div сlassName="countdown__input">
             <label className="countdown__input-item">
               <InputNumber onChange={this.inputMinutes} disabled={isActive} />
               Minutes
