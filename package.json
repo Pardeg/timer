@@ -1,0 +1,83 @@
+{
+  "homepage": "https://pardeg.github.io/my-app",
+  "name": "timer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@csstools/normalize.css": "^10.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "antd": "^4.1.4",
+    "gh-pages": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "stylelint": "^13.3.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "stylelint": "stylelint src/components/**/*.{css,scss,sass}",
+    "stylelint:fix": "stylelint src/*.{css,scss,sass} --fix",
+    "eslint": "eslint  src/*.{js,jsx}",
+    "eslint:fix": "eslint  src/*.{js,jsx} --fix",
+    "eslint:fix:layout": "eslint  src/*.{js,jsx} --fix --fix-type layout",
+    "lint": "npm run eslint & npm run stylelint",
+    "lint:fix": "npm run eslint:fix & npm run stylelint:fix",
+    "prettier": "prettier src/**/*.*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{css,scss,sass,less,js,jsx,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{js,jsx}": [
+      "eslint --fix --fix-type layout",
+      "git add"
+    ],
+    "src/**/*.{css,scss,sass,less}": [
+      "stylelint"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.0",
+    "node-sass": "^4.13.1",
+    "prettier": "2.0.4"
+  }
+}

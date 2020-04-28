@@ -1,0 +1,11 @@
+.display {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  &-time{
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    border: 1px solid transparent;
+  }
+}

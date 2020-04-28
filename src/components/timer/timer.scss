@@ -1,0 +1,36 @@
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  min-width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer__header {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.timer__display {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.control-block {
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn {
+
+  margin-right: 20px;
+  width: 90px;
+}
