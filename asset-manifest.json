@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/timer/static/css/main.7608a0eb.chunk.css",
+    "main.js": "/timer/static/js/main.072606da.chunk.js",
+    "main.js.map": "/timer/static/js/main.072606da.chunk.js.map",
+    "runtime-main.js": "/timer/static/js/runtime-main.7ed3bfb2.js",
+    "runtime-main.js.map": "/timer/static/js/runtime-main.7ed3bfb2.js.map",
+    "static/css/2.38036fef.chunk.css": "/timer/static/css/2.38036fef.chunk.css",
+    "static/js/2.fe2547fa.chunk.js": "/timer/static/js/2.fe2547fa.chunk.js",
+    "static/js/2.fe2547fa.chunk.js.map": "/timer/static/js/2.fe2547fa.chunk.js.map",
+    "index.html": "/timer/index.html",
+    "precache-manifest.a9883270d230f11993edfbd43af9aef9.js": "/timer/precache-manifest.a9883270d230f11993edfbd43af9aef9.js",
+    "service-worker.js": "/timer/service-worker.js",
+    "static/css/2.38036fef.chunk.css.map": "/timer/static/css/2.38036fef.chunk.css.map",
+    "static/css/main.7608a0eb.chunk.css.map": "/timer/static/css/main.7608a0eb.chunk.css.map",
+    "static/js/2.fe2547fa.chunk.js.LICENSE.txt": "/timer/static/js/2.fe2547fa.chunk.js.LICENSE.txt",
+    "static/media/Tony Igy - Astronomia (mp3cut.net).mp3": "/timer/static/media/Tony Igy - Astronomia (mp3cut.net).4e8d9bd0.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ed3bfb2.js",
+    "static/css/2.38036fef.chunk.css",
+    "static/js/2.fe2547fa.chunk.js",
+    "static/css/main.7608a0eb.chunk.css",
+    "static/js/main.072606da.chunk.js"
+  ]
+}
