@@ -4,13 +4,20 @@ import PropTypes from 'prop-types';
 import './countdawnControl.scss';
 
 const Control = (props) => {
-  const { isActive, start, reset, pause } = props;
-  const startButton = <Button onClick={start}>Start</Button>;
-  const resetButton = <Button onClick={reset}>Reset</Button>;
-  const pauseButton = <Button onClick={pause}>Pause</Button>;
+  const { isActive, reset, toggle } = props;
+  const startButton = (
+    <Button onClick={toggle} className="control__btn">
+      {isActive ? 'Pause' : 'Start'}
+    </Button>
+  );
+  const resetButton = (
+    <Button onClick={reset} className="control__btn">
+      Reset
+    </Button>
+  );
   return (
     <div className="control">
-      {isActive ? pauseButton : startButton}
+      {startButton}
       {resetButton}
     </div>
   );
@@ -18,15 +25,13 @@ const Control = (props) => {
 
 Control.defaultProps = {
   isActive: false,
-  start: null,
+  toggle: null,
   reset: null,
-  pause: null,
 };
 
 Control.propTypes = {
   isActive: PropTypes.bool,
-  start: PropTypes.func,
+  toggle: PropTypes.func,
   reset: PropTypes.func,
-  pause: PropTypes.func,
 };
 export default Control;

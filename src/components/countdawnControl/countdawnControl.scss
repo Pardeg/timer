@@ -2,5 +2,11 @@
   display: flex;
   flex-direction: row;
   padding: 10px;
+
+  &__btn {
+    margin-right: 20px;
+    width: 70px;
+  }
 }
+
 
